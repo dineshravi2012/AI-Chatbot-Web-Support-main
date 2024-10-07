@@ -105,20 +105,21 @@
     }
 
     /* Content section styling */
-      .content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column; /* Stack children vertically */
-            justify-content: center;
-            align-items: flex-start; /* Align items to the start (left) */
-            background-image: url('swb.png'); /* Set the background image */
-            background-size: cover; /* Ensures the image covers the div */
-            background-position: center; /* Centers the background image */
-            background-repeat: no-repeat; /* Prevents repeating of the image */
-            width: 100%;
-            margin-top: 70px; /* Adds margin to push the content below the header */
-            color: white; /* Set text color to white */
+   .content {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column; /* Stack children vertically */
+          justify-content: flex-start; /* Align items to the start (top) */
+          align-items: center; /* Center items horizontally */
+          background-image: url('swb.png'); /* Set the background image */
+          background-size: cover; /* Ensures the image covers the div */
+          background-position: top center; /* Positions the background image at the top center */
+          background-repeat: no-repeat; /* Prevents repeating of the image */
+          width: 100%;
+          min-height: calc(100vh - 70px); /* Ensures it occupies the remaining viewport height */
+          color: white; /* Set text color to white */
 }
+
 
 
 
