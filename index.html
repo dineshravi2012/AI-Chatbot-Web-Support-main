@@ -6,22 +6,16 @@
   <title>Support AI</title>
   <style>
     /* General Page Styling */
-    body {
+     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       height: 100vh;
-      width: 100%;
       display: flex;
       flex-direction: column;
-      /*background-image: url('swb.png');*/
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      overflow: hidden;
     }
 
-    /* Header container */
+       /* Header container */
     .header-container {
       display: flex;
       justify-content: space-between;
@@ -104,21 +98,19 @@
       margin-left: 15px;
     }
 
-    /* Content section styling */
-   .content {
-          flex-grow: 1;
-          display: flex;
-          flex-direction: column; /* Stack children vertically */
-          justify-content: flex-start; /* Align items to the start (top) */
-          align-items: center; /* Center items horizontally */
-          background-image: url('swb.png'); /* Set the background image */
-          background-size: cover; /* Ensures the image covers the div */
-          background-position: top center; /* Positions the background image at the top center */
-          background-repeat: no-repeat; /* Prevents repeating of the image */
-          width: 100%;
-          min-height: calc(100vh - 70px); /* Ensures it occupies the remaining viewport height */
-          color: white; /* Set text color to white */
-}
+     .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+      justify-content: center;
+      align-items: flex-start; /* Align items to the start (left) */
+      /*  background-image: url('swb.png');Content background image */
+      background-size: cover; /* Ensures the image covers the div */
+      background-position: center; /* Centers the background image */
+      width: 100%;
+      /*  padding: 20px; Adds space inside the content section */
+      color: white; /* Set text color to white */
+    }
 
 
 
@@ -318,9 +310,10 @@
 
 
   <!-- Content section -->
-  <div class="content">
-       
+ <div class="content">
+    <img src="swb.png" style="max-width: -webkit-fill-available;max-height: -webkit-fill-available;"></img> 
   </div>
+
 
   <!-- Text note above chatbot button -->
   <div class="chatbot-note" id="chatbot-note">How may I help you?</div>
